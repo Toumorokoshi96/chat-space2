@@ -1,0 +1,28 @@
+html,
+body {
+  height: 100%;
+}
+.four-boxes {
+  display: flex;
+  height: 100%;
+}
+.four-boxes .four-boxes__left {
+  height: 100%;
+  width: 300px;
+}
+.four-boxes .four-boxes__left .four-boxes__left__top {
+  height: 100px;
+}
+.four-boxes .four-boxes__left .four-boxes__left__bottom {
+  height: calc(100% - 100px);
+}
+.four-boxes .four-boxes__right {
+  width: calc(100% - 300px);
+  height: 100%;
+}
+.four-boxes .four-boxes__right .four-boxes__right__top {
+  height: 100px;
+}
+.four-boxes .four-boxes__right .four-boxes__right__bottom {
+  height: calc(100% - 100px);
+}

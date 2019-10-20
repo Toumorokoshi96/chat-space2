@@ -1,0 +1,32 @@
+// Place all the styles related to the messages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+html, body{
+  height: 100%;
+}
+.four-boxes{
+  display: flex;
+  height: 100%;
+  
+  .four-boxes__left{
+    height: 100%;
+    width: 300px;
+    .four-boxes__left__top{
+      height: 100px;
+    }
+    .four-boxes__left__bottom{
+      height: calc(100% - 100px);
+    }
+  }
+
+  .four-boxes__right{
+    width: calc(100% - 300px);
+    height: 100%;
+    .four-boxes__right__top{
+      height: 100px;
+    }
+    .four-boxes__right__bottom{
+      height: calc(100% - 100px);
+    }
+  }
+}
