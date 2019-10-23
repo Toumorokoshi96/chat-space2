@@ -1,47 +1,52 @@
+@import "font-awesome";
+
 // Place all the styles related to the messages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 * {
   box-sizing : border-box;
-}
-
-html, body{
-  height: 100%;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 .four-boxes{
   display: flex;
-  height: 100%;
+  height: 100vh;
+  width: 100%;
+
   
   .four-boxes__left{
-    height: 100%;
     width: 300px;
+    height: 100vh;
     .four-boxes__left__top{
+      width:  100%;
       height: 100px;
-      width: 300px;
-      // position:fixed;
-
       position: sticky;/*固定する*/
       position: -webkit-sticky;/*Safari用ベンダープレフィックス*/
       top: 0;/*ブラウザの上からの距離はゼロ*/
     }
     .four-boxes__left__bottom{
-      // margin: 100px,0,0,0; position:fixed;のため使おうとしたがあってもなくてもおなじ、効いてない。。
+      width: 300px;
       height: calc(100% - 100px);
+      overflow: scroll;
     }
   }
 
   .four-boxes__right{
-    width: calc(100% - 300px);
+    width: 100%;
     height: 100%;
     .four-boxes__right__top{
+      width: 100%;
       height: 100px;
       position: sticky;/*固定する*/
       position: -webkit-sticky;/*Safari用ベンダープレフィックス*/
       top: 0;/*ブラウザの上からの距離はゼロ*/
     }
     .four-boxes__right__bottom{
-      margin: 100px,0,0,0;
+      width: 100%;
       height: calc(100% - 100px);
+      overflow: scroll;
     }
   }
 }
